@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OnTrack Weather</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Yesteryear&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/c9c3353385.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather-container">
+        <div class="row">
+          <div class="col-4">
+            <div class="first-card">
+              <div class="card-body">
+                <h1 class="card-title">
+                  OnTrack <em class="title"> Weather </em>
+                </h1>
+                <p class="card-text">
+                  Introducing a <strong> simple </strong> to use weather app
+                  that gives you <strong> real-time weather </strong> and a
+                  forecast report.
+                </p>
+                <button>Download</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-body">
+                <form id="searchEngine">
+                <input  type="text"  placeholder="Enter a city"
+               autocomplete="off"
+                autofocus="on" 
+                id="city-input"
+                />
+                <button><i class="fas fa-search-location"></i></button>
+<button id="find-location"><i class="fas fa-street-view"></i></button>
+              </form>
+                <div class="weather-summary">
+                  <div class="row">
+                   
+                    <h5 id="city"></h5>
+                 
+
+                    <div class="col">
+                      <div id="current-date"></div>
+                      <div id="temperature-description"></div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-6">
+                      <id class="fa-sun-icon" id = "icon">
+                        <i class="fas fa-sun"></i>
+                      </id>
+                      <id>
+                        <span class = "temperature" id="temperature-today">  </span> <span class="unit">  <a  href="#" id="celsius-link"> °C  </a
+                        >|
+                        <a  href="#" id="fahrenheit-link"> °F </a
+                        > </span>
+                        </id>
+                    </div>
+
+                    <div class="col-6">
+                       <div class="weather-textdetail">Humidity: <span id="humidity"></span> %</div>
+                        <div class="weather-textdetail">Wind: <span id="wind"></span>km/h</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+          
+              <div class="row">
+                <div class="col">
+                  <div class="forecast-day">Mon</div>
+                </div>
+                <div class="col">
+                  <div class="forecast-day">Tue</div>
+                </div>
+                <div class="col">
+                  <div class="forecast-day">Wed</div>
+                </div>
+                <div class="col">
+                  <div class="forecast-day">Thur</div>
+                </div>
+                <div class="col">
+                  <div class="forecast-day">Fri</div>
+                </div>
+                <div class="col">
+                  <div class="forecast-day">Sat</div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col">
+                  <i class="fas fa-sun"></i>
+                </div>
+                <div class="col">
+                  <i class="fas fa-cloud-sun"></i>
+                </div>
+                <div class="col">
+                  <i class="fas fa-cloud-sun-rain"></i>
+                </div>
+                <div class="col">
+                  <i class="fas fa-cloud-sun-rain"></i>
+                </div>
+                <div class="col">
+                  <i class="fas fa-cloud-sun"></i>
+                </div>
+                <div class="col">
+                  <i class="fas fa-sun"></i>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div class="forecast-temperature">31°</div>
+                </div>
+                <div class="col">
+                  <div class="forecast-temperature">25°</div>
+                </div>
+                <div class="col">
+                  <div class="forecast-temperature">21°</div>
+                </div>
+                <div class="col">
+                  <div class="forecast-temperature">23°</div>
+                </div>
+                <div class="col">
+                  <div class="forecast-temperature">25°</div>
+                </div>
+                <div class="col">
+                  <div class="forecast-temperature">30°</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+      
+
+      <footer>
+        <p>
+          <small> This project was coded by Kiyarah-Lee Lindt </small>
+        </p>
+      </footer>
+      <script src="src/app.js"></script>
+    </div>
+  </body>
+</html>
