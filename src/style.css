@@ -1,0 +1,27 @@
+body {
+  padding: 50px;
+}
+
+footer {
+  text-align: center;
+}
+
+.weather-container {
+  margin: 0 auto;
+}
+.title {
+  font-family: "Yesteryear", cursive;
+}
+
+.fa-sun-icon {
+  font-size: 40px;
+}
+.temperature {
+  font-size: 60px;
+}
+
+.unit {
+  position: relative;
+  top: -23px;
+  text-decoration: none;
+}
