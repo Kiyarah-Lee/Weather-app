@@ -1,16 +1,57 @@
 body {
-  padding: 50px;
+  padding: 70px;
+}
+.container {
+  color: #272044;
 }
 
 footer {
   text-align: center;
 }
 
-.weather-container {
-  margin: 0 auto;
-}
 .title {
   font-family: "Yesteryear", cursive;
+  color: #885df1;
+}
+.fa-google-play {
+  padding: 3px;
+  font-size: 16px;
+}
+#googleplay {
+  border-radius: 5px;
+  border-color: #232425;
+  color: #232425;
+  cursor: pointer;
+  padding: 2px 6px;
+}
+
+.fa-apple {
+  padding: 3px;
+  font-size: 16px;
+}
+
+#appstore {
+  border-radius: 5px;
+  background-color: #232425;
+  border-color: #232425;
+  color: white;
+  cursor: pointer;
+  padding: 2px 6px;
+}
+#appstore:hover {
+  background-color: black;
+  border-color: black;
+}
+#googleplay:hover {
+  background-color: white;
+}
+
+.fa-search-location {
+  cursor: pointer;
+}
+
+#city {
+  padding: 10px 10px 2px;
 }
 
 .fa-sun-icon {
@@ -25,12 +66,36 @@ footer {
   top: -23px;
   text-decoration: none;
 }
-.github {
-  text-decoration: none;
+ul {
+  font-size: 17px;
+  padding: 16px;
 }
-.netlify {
-  text-decoration: none;
+
+#codername {
+  color: #885df1;
+  font-weight: bold;
 }
-a:hover {
+#github {
+  text-decoration: none;
+  color: #885df1;
+  font-weight: bold;
   text-decoration: underline;
+}
+#netlify {
+  text-decoration: none;
+  color: #885df1;
+  font-weight: bold;
+  text-decoration: underline;
+}
+#github:hover {
+  text-decoration: none;
+  color: #885df1;
+}
+#netlify:hover {
+  text-decoration: none;
+  color: #885df1;
+}
+
+footer {
+  padding: 30px 10px 30px 10px;
 }
