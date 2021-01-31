@@ -25,3 +25,12 @@ footer {
   top: -23px;
   text-decoration: none;
 }
+.github {
+  text-decoration: none;
+}
+.netlify {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
