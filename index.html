@@ -5,24 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OnTrack Weather</title>
     <link rel="stylesheet" href="src/style.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
-      crossorigin="anonymous"
-    />
+      crossorigin="anonymous"/>
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Yesteryear&display=swap"
-      rel="stylesheet"
-    />
+
+    <link href="https://fonts.googleapis.com/css2?family=Yesteryear&display=swap"
+      rel="stylesheet"/>
+
     <script
       src="https://kit.fontawesome.com/c9c3353385.js"
       crossorigin="anonymous"
     ></script>
+
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
   </head>
+
   <body>
     <div class="container">
       <div class="weather-container">
@@ -38,7 +40,8 @@
                   that gives you <strong> real-time weather </strong> and a
                   forecast report.
                 </p>
-                <button>Download</button>
+                <button id="googleplay"><i class="fab fa-google-play"></i>Google Play</button>
+                <button id="appstore"><i class="fab fa-apple"></i>App Store</button>
               </div>
             </div>
           </div>
@@ -52,13 +55,13 @@
                 autofocus="on" 
                 id="city-input"
                 />
-                <button><i class="fas fa-search-location"></i></button>
+                <button ><i class="fas fa-search-location"></i></button>
 <button id="find-location"><i class="fas fa-street-view"></i></button>
               </form>
                 <div class="weather-summary">
                   <div class="row">
                    
-                    <h5 id="city"></h5>
+                    <h2 id="city"></h2>
                  
 
                     <div class="col">
@@ -68,7 +71,7 @@
                   </div>
 
                   <div class="row">
-                    <div class="col-6">
+                    <div class="col-6" >
                       <id class="fa-sun-icon" id = "icon">
                         <i class="fas fa-sun"></i>
                       </id>
@@ -88,9 +91,9 @@
                 </div>
               </div>
 
-          
-              <div class="row">
-                <div class="col">
+          <ul>
+              <div class="row" >
+                <div class="col"id="forecastdays">
                   <div class="forecast-day">Mon</div>
                 </div>
                 <div class="col">
@@ -110,8 +113,8 @@
                 </div>
               </div>
 
-              <div class="row">
-                <div class="col">
+              <div class="row" >
+                <div class="col" id="forecasticons">
                   <i class="fas fa-sun"></i>
                 </div>
                 <div class="col">
@@ -130,8 +133,8 @@
                   <i class="fas fa-sun"></i>
                 </div>
               </div>
-              <div class="row">
-                <div class="col">
+              <div class="row" >
+                <div class="col" id="forecasttemperature">
                   <div class="forecast-temperature">31°</div>
                 </div>
                 <div class="col">
@@ -148,6 +151,7 @@
                 </div>
                 <div class="col">
                   <div class="forecast-temperature">30°</div>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -157,7 +161,7 @@
 
       <footer>
         <p>
-          <small> This project was coded by Kiyarah-Lee Lindt and is open-sourced on <a href="https://github.com/Kiyarah-Lee/Weather-app" target="_blank" class="github"> GitHub </a> and hosted on <a href="https://gifted-borg-2c76b4.netlify.app" target="_blank" class="netlify"> Netlify </a>. </small>
+          <small> This project was coded by <span id="codername">Kiyarah-Lee Lindt</span> and is <a href="https://github.com/Kiyarah-Lee/Weather-app" target="_blank" id="github"> open-sourced on  GitHub </a> and <a href="https://gifted-borg-2c76b4.netlify.app" target="_blank" id="netlify">hosted Netlify </a>. </small>
         </p>
       </footer>
       <script src="src/app.js"></script>
