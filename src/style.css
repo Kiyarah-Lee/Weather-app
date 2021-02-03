@@ -54,14 +54,14 @@ footer {
   padding: 10px 10px 2px;
 }
 
-.fa-sun-icon {
+#fa-sun-icon {
   font-size: 40px;
 }
-.temperature {
+#temperature-today {
   font-size: 60px;
 }
 
-.unit {
+#unit {
   position: relative;
   top: -23px;
   text-decoration: none;
