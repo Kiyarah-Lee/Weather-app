@@ -1,6 +1,7 @@
 body {
   padding: 70px;
 }
+
 .container {
   color: #272044;
 }
@@ -13,6 +14,7 @@ footer {
   font-family: "Yesteryear", cursive;
   color: #885df1;
 }
+
 .fa-google-play {
   padding: 3px;
   font-size: 16px;
@@ -98,4 +100,5 @@ ul {
 
 footer {
   padding: 30px 10px 30px 10px;
+  text-align: center;
 }
