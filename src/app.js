@@ -72,22 +72,29 @@ currentDate.innerHTML = formateDate(now);
 // Change city using Search Button
 
 function showTemp(response) {
-  console.log(response.data);
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#temperature-today").innerHTML = Math.round(
     response.data.main.temp
   );
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#wind").innerHTML = Math.round(
-    response.data.wind.speed
+    response.data.wind.speed * 3.6
   );
   document.querySelector("#temperature-description").innerHTML =
     response.data.weather[0].description;
+
+  document
+    .querySelector("#current-temp-icon")
+    .setAttribute(
+      "src",
+      `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+    );
 }
 
 function searchCity(city) {
   let apiKey = "2ee2ad7e2e6f06462fb2d5dafa754e00";
   let unit = "metric";
+
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=${unit}&appid=${apiKey}`;
   axios.get(apiUrl).then(showTemp);
 }
