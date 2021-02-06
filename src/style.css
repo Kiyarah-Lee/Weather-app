@@ -1,18 +1,21 @@
 body {
-  padding: 70px;
+  padding: 65px;
 }
 
 .container {
   color: #272044;
 }
+#weather-app {
+  align-items: center;
+}
 
-footer {
-  text-align: center;
+#first-card-body {
+  padding: 30px 20px 20px 20px;
 }
 
 .title {
   font-family: "Yesteryear", cursive;
-  color: #885df1;
+  color: #ec6e4c;
 }
 
 .fa-google-play {
@@ -21,10 +24,11 @@ footer {
 }
 #googleplay {
   border-radius: 5px;
-  border-color: #232425;
+  border-color: #ec6e4c;
   color: #232425;
   cursor: pointer;
   padding: 2px 6px;
+  background-color: white;
 }
 
 .fa-apple {
@@ -34,71 +38,87 @@ footer {
 
 #appstore {
   border-radius: 5px;
-  background-color: #232425;
-  border-color: #232425;
+  background-color: #ec6e4c;
+  border-color: #ec6e4c;
   color: white;
   cursor: pointer;
   padding: 2px 6px;
 }
 #appstore:hover {
-  background-color: black;
-  border-color: black;
+  background-color: #e27c60;
+  border-color: #ec6e4c;
 }
 #googleplay:hover {
-  background-color: white;
+  background-color: #faf5f4;
 }
 
 .fa-search-location {
   cursor: pointer;
 }
 
-#city {
-  padding: 10px 10px 2px;
+#temperature-description::first-letter {
+  text-transform: capitalize;
 }
 
-#fa-sun-icon {
-  font-size: 40px;
+#current-temp-icon {
+  position: relative;
+  top: -13px;
+  width: 60px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 #temperature-today {
-  font-size: 60px;
+  font-size: 50px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
-#unit {
+.unit {
   position: relative;
   top: -23px;
-  text-decoration: none;
 }
-ul {
+
+#celsius-link {
+  text-decoration: none;
+  color: #232425;
+}
+#fahrenheit-link {
+  text-decoration: none;
+  color: #232425;
+}
+
+#temperature-forecast {
   font-size: 17px;
-  padding: 16px;
+  padding: 16px 16px 16px 16px;
+  align-content: center;
 }
 
 #codername {
-  color: #885df1;
+  color: #ec6e4c;
   font-weight: bold;
 }
 #github {
   text-decoration: none;
-  color: #885df1;
+  color: #ec6e4c;
   font-weight: bold;
   text-decoration: underline;
 }
 #netlify {
   text-decoration: none;
-  color: #885df1;
+  color: #ec6e4c;
   font-weight: bold;
   text-decoration: underline;
 }
 #github:hover {
   text-decoration: none;
-  color: #885df1;
+  color: #ec6e4c;
 }
 #netlify:hover {
   text-decoration: none;
-  color: #885df1;
+  color: #ec6e4c;
 }
 
-footer {
+.footer {
   padding: 30px 10px 30px 10px;
   text-align: center;
 }
