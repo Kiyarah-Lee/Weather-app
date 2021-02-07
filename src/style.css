@@ -80,13 +80,10 @@ body {
 
 #celsius-link {
   text-decoration: none;
+  color: #232425;
 }
-
 #fahrenheit-link {
   text-decoration: none;
-}
-
-.active {
   color: #232425;
 }
 
