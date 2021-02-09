@@ -1,16 +1,20 @@
-body {
-  padding: 65px;
+@media (min-width: 768px) {
+  body {
+    padding: 70;
+  }
 }
 
 .container {
   color: #272044;
+  max-width: 1020px;
+  margin: 0 auto;
+  padding: 60px;
 }
-#weather-app {
-  align-items: center;
-}
-
 #first-card-body {
-  padding: 30px 20px 20px 20px;
+  padding: 30px 40px;
+}
+#second-card-body {
+  padding: 20px 40px;
 }
 
 .title {
@@ -23,8 +27,8 @@ body {
   font-size: 16px;
 }
 #googleplay {
-  border-radius: 5px;
-  border-color: #ec6e4c;
+  border-radius: 50px;
+  border: 2px solid #ec6e4c;
   color: #232425;
   cursor: pointer;
   padding: 2px 6px;
@@ -37,9 +41,9 @@ body {
 }
 
 #appstore {
-  border-radius: 5px;
+  border-radius: 50px;
   background-color: #ec6e4c;
-  border-color: #ec6e4c;
+  border: 2px solid #ec6e4c;
   color: white;
   cursor: pointer;
   padding: 2px 6px;
@@ -50,6 +54,10 @@ body {
 }
 #googleplay:hover {
   background-color: #faf5f4;
+}
+
+.card-body {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
 .fa-search-location {
@@ -85,12 +93,6 @@ body {
 
 #fahrenheit-link {
   text-decoration: none;
-}
-
-#temperature-forecast {
-  font-size: 17px;
-  padding: 16px 16px 16px 16px;
-  align-content: center;
 }
 
 #codername {
